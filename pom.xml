@@ -3,11 +3,19 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.qaagility.javaee</groupId>
 	<artifactId>HelloWorldJava</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>Hello World Java</name>
 	<description>Learn Java JSP and Servlet</description>
-
+	<url>http://maven.apache.org</url>
+	<properties>
+		<jdk.version>1.7</jdk.version>
+		<spring.version>4.1.1.RELEASE</spring.version>
+		<jstl.version>1.2</jstl.version>
+		<junit.version>4.11</junit.version>
+		<logback.version>1.0.13</logback.version>
+		<jcl-over-slf4j.version>1.7.5</jcl-over-slf4j.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -30,6 +38,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>HelloWorldJava</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
@@ -63,7 +72,7 @@
 						<format>xml</format>
 					</formats>
 					<check>
-						<haltOnFailure>false</haltOnFailure>
+					<haltOnFailure>false</haltOnFailure>
 					<lineRate>95</lineRate>
 					<branchRate>95</branchRate>
 					<totalLineRate>95</totalLineRate>
