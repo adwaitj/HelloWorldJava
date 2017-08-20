@@ -80,6 +80,16 @@
 				</executions>
 		       </plugin>
 		</plugins>
+		</build>
+	<reporting>
+		<plugins>
+			<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>cobertura-maven-plugin</artifactId>
+			<version>2.7</version>
+			</plugin>
+		</plugins>
+	</reporting>
      <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
@@ -87,5 +97,5 @@
         <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
     </distributionManagement>
-	</build>
+	
 </project>
